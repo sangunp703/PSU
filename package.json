@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon psu_server",
+    "build": "webpack",
+    "watch": "webpack -w"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,8 @@
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
     "babel-loader": "^8.0.6",
-    "webpack": "^4.41.2"
+    "nodemon": "^1.19.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }
