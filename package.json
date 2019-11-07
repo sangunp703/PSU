@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon psu_server",
     "build": "webpack",
-    "watch": "webpack -w"
+    "watch": "webpack -w",
+    "start:dev": "nodemon --watch src/ psu_server.js"
   },
   "repository": {
     "type": "git",
