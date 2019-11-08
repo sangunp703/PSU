@@ -24,7 +24,7 @@ export default class Contact extends Component{
   }
   render(){
     if(this.state.jump){
-      <Redirect to={this.state.jump} />
+      return <Redirect to={this.state.jump} />
     }
     return (
       <div>
