@@ -8,17 +8,24 @@ export default class MainHeader extends Component {
   constructor(props){
     super(props)
     this.state = {
-      jump: ''
+      color: props.color
     }
+  }
+  componentDidMount(){
+    document.querySelector('.nav').style.backgroundColor = this.state.color
   }
   render(){
     return (
       <nav>
-        <ul style={style.nav}>
-          <li style={style.items}>Introduction</li>
-          <li style={style.items}>History</li>
-          <li style={style.items}>Work</li>
-          <li style={style.items}>Contact</li>
+        <ul class="nav" style={style.nav}>
+          <li style={style.items}
+            onClick={() => this.props.jump('/introduction')}>Introduction</li>
+          <li style={style.items}
+            onClick={() => this.props.jump('/history')}>History</li>
+          <li style={style.items}
+            onClick={() => this.props.jump('/work')}>Work</li>
+          <li style={style.items}
+            onClick={() => this.props.jump('/contact')}>Contact</li>
         </ul>
       </nav>
     )

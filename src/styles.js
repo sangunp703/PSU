@@ -58,12 +58,11 @@ const styles = {
       display: 'grid',
       gridTemplateColumns: 'repeat(4, 1fr)',
       textAlign: 'center',
-      backgroundColor: 'yellow',
       zIndex: '5'
     },
     items: {
       fontSize: '2rem',
-      cursor: 'default',
+      cursor: 'pointer',
       fontWeight: 'bold',
       textTransform: 'uppercase'
     },
@@ -115,7 +114,101 @@ const styles = {
     header: {
       position: 'relative',
       height: '100vh',
-      width: '100vw'
+      width: '100vw',
+      backgroundColor: '#ECB765'
+    },
+    silhouette:{
+      position: 'absolute',
+      top: '50%',
+      right: '15%',
+      transform: 'translateY(-50%)',
+      content: 'url("./resource/silhouette.png")',
+      width: '35%',
+      height: '60%'
+    },
+    title: {
+      position: 'absolute',
+      top: '50%',
+      left: '15%',
+      transform: 'translateY(-50%)',
+      fontSize: '7rem',
+      fontWeight: 'bold',
+      textTransform: 'uppercase'
+    },
+    section: {
+      height: '2000px',
+      width: '100vw',
+      backgroundColor: 'white'
+    }
+  },
+  history:{
+    header: {
+      position: 'relative',
+      height: '100vh',
+      width: '100vw',
+      backgroundColor: '#DB7A65'
+    },
+    silhouette:{
+      position: 'absolute',
+      top: '50%',
+      right: '15%',
+      transform: 'translateY(-50%)',
+      content: 'url("./resource/silhouette.png")',
+      width: '35%',
+      height: '60%'
+    },
+    title: {
+      position: 'absolute',
+      top: '50%',
+      left: '15%',
+      transform: 'translateY(-50%)',
+      fontSize: '7rem',
+      fontWeight: 'bold',
+      textTransform: 'uppercase'
+    },
+    section: {
+      height: '2000px',
+      width: '100vw',
+      backgroundColor: 'white'
+    }
+  },
+  work:{
+    header: {
+      position: 'relative',
+      height: '100vh',
+      width: '100vw',
+      backgroundColor: '#265E62'
+    },
+    silhouette:{
+      position: 'absolute',
+      top: '50%',
+      right: '15%',
+      transform: 'translateY(-50%)',
+      content: 'url("./resource/silhouette.png")',
+      width: '35%',
+      height: '60%'
+    },
+    title: {
+      position: 'absolute',
+      top: '50%',
+      left: '15%',
+      transform: 'translateY(-50%)',
+      fontSize: '7rem',
+      fontWeight: 'bold',
+      textTransform: 'uppercase'
+    },
+    section: {
+      height: '2000px',
+      width: '100vw',
+      backgroundColor: 'white'
+    }
+  },
+  contact:{
+    header: {
+      position: 'relative',
+      height: '100vh',
+      width: '100vw',
+      backgroundColor: '#685357'
     },
     silhouette:{
       position: 'absolute',
