@@ -43,7 +43,7 @@ export default class Opening extends Component{
     this.setState({hold: false})
   }
   next(e){
-    this.setState({jump: '/main'})
+    this.setState({jump: '/introduction'})
   }
   render(){
     if(this.state.jump){
