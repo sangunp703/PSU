@@ -80,7 +80,8 @@ const styles = {
       height: '50px',
       top: '50%',
       left: '5%',
-      transform: 'translateY(-50%)'
+      transform: 'translateY(-50%)',
+      cursor: 'pointer'
     },
     next: {
       content: 'url("./resource/next.png")',
@@ -89,7 +90,8 @@ const styles = {
       height: '50px',
       top: '50%',
       right: '5%',
-      transform: 'translateY(-50%)'
+      transform: 'translateY(-50%)',
+      cursor: 'pointer'
     }
   },
   bottomArrow: {
@@ -123,15 +125,15 @@ const styles = {
       right: '15%',
       transform: 'translateY(-50%)',
       content: 'url("./resource/silhouette.png")',
-      width: '35%',
-      height: '60%'
+      width: '35vw',
+      height: '28vw'
     },
     title: {
       position: 'absolute',
       top: '50%',
       left: '15%',
       transform: 'translateY(-50%)',
-      fontSize: '7rem',
+      fontSize: '3vw',
       fontWeight: 'bold',
       textTransform: 'uppercase'
     },
@@ -154,15 +156,15 @@ const styles = {
       right: '15%',
       transform: 'translateY(-50%)',
       content: 'url("./resource/silhouette.png")',
-      width: '35%',
-      height: '60%'
+      width: '35vw',
+      height: '28vw'
     },
     title: {
       position: 'absolute',
       top: '50%',
       left: '15%',
       transform: 'translateY(-50%)',
-      fontSize: '7rem',
+      fontSize: '3vw',
       fontWeight: 'bold',
       textTransform: 'uppercase'
     },
@@ -185,15 +187,15 @@ const styles = {
       right: '15%',
       transform: 'translateY(-50%)',
       content: 'url("./resource/silhouette.png")',
-      width: '35%',
-      height: '60%'
+      width: '35vw',
+      height: '28vw'
     },
     title: {
       position: 'absolute',
       top: '50%',
       left: '15%',
       transform: 'translateY(-50%)',
-      fontSize: '7rem',
+      fontSize: '3vw',
       fontWeight: 'bold',
       textTransform: 'uppercase'
     },
@@ -216,15 +218,15 @@ const styles = {
       right: '15%',
       transform: 'translateY(-50%)',
       content: 'url("./resource/silhouette.png")',
-      width: '35%',
-      height: '60%'
+      width: '35vw',
+      height: '28vw'
     },
     title: {
       position: 'absolute',
       top: '50%',
       left: '15%',
       transform: 'translateY(-50%)',
-      fontSize: '7rem',
+      fontSize: '3vw',
       fontWeight: 'bold',
       textTransform: 'uppercase'
     },

@@ -30,7 +30,7 @@ export default class Introduction extends Component{
       <div>
         <header style={style.header}>
           <MainHeader color="#ECB765" jump={this.headerCallback}/>
-          <SideArrow />
+          <SideArrow jump={this.headerCallback} path={'/introduction'}/>
           <BottomArrow />
           <h1 style={style.title}>Who<br />is this guy?</h1>
           <img style={style.silhouette}/>

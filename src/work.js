@@ -30,7 +30,7 @@ export default class Work extends Component{
       <div>
         <header style={style.header}>
           <MainHeader color="#265E62" jump={this.headerCallback}/>
-          <SideArrow />
+          <SideArrow jump={this.headerCallback} path={'/work'} />
           <BottomArrow />
           <h1 style={style.title}>what <br />did you do?</h1>
           <img style={style.silhouette}/>

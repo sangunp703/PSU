@@ -30,7 +30,7 @@ export default class History extends Component{
       <div>
         <header style={style.header}>
           <MainHeader color="#DB7A65" jump={this.headerCallback}/>
-          <SideArrow />
+          <SideArrow jump={this.headerCallback} path={'/history'} />
           <BottomArrow />
           <h1 style={style.title}>why<br />did you become a developer?</h1>
           <img style={style.silhouette}/>
