@@ -29,8 +29,8 @@ export default class Introduction extends Component{
     return (
       <div>
         <header style={style.header}>
-          <MainHeader color="#ECB765" jump={this.headerCallback}/>
-          <SideArrow jump={this.headerCallback} path={'/introduction'}/>
+          <MainHeader color="#ECB765" jump={this.headerCallback} path={'introduction'}/>
+          <SideArrow jump={this.headerCallback} path={'introduction'}/>
           <BottomArrow />
           <h1 style={style.title}>Who<br />is this guy?</h1>
           <img style={style.silhouette}/>

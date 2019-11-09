@@ -13,22 +13,42 @@ export default class SideArrow extends Component {
     }
   }
   next(e){
-    const path = screen.indexOf(this.props.path)
+    const path = screen.indexOf('/' + this.props.path)
     if(path !== 3){
       this.props.jump(screen[path + 1])
     }
   }
   back(e){
-    const path = screen.indexOf(this.props.path)
+    const path = screen.indexOf('/' + this.props.path)
     if(path !== 0){
       this.props.jump(screen[path - 1])
     }
   }
+  backOver(){
+    document.querySelector('.back').style.opacity = '1'
+  }
+  backOut(){
+    document.querySelector('.back').style.opacity = '0'
+  }
+  nextOver(){
+    document.querySelector('.next').style.opacity = '1'
+  }
+  nextOut(){
+    document.querySelector('.next').style.opacity = '0'
+  }
   render(){
     return (
       <div style={style.arrowBox}>
-        <img style={style.back} onClick={e => this.back(e)}/>
-        <img style={style.next} onClick={e => this.next(e)}/>
+        <div style={style.backArea}
+          onMouseOver={e => this.backOver()}
+          onMouseOut={e => this.backOut()}>
+          <img class="back" style={style.back} onClick={e => this.back(e)}/>
+        </div>
+        <div style={style.nextArea}
+          onMouseOver={e => this.nextOver()}
+          onMouseOut={e => this.nextOut()}>
+         <img class="next" style={style.next} onClick={e => this.next(e)}/>
+        </div>
       </div>
     )
   }

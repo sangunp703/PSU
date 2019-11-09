@@ -29,8 +29,8 @@ export default class Work extends Component{
     return (
       <div>
         <header style={style.header}>
-          <MainHeader color="#265E62" jump={this.headerCallback}/>
-          <SideArrow jump={this.headerCallback} path={'/work'} />
+          <MainHeader color="#265E62" jump={this.headerCallback} path={'work'}/>
+          <SideArrow jump={this.headerCallback} path={'work'} />
           <BottomArrow />
           <h1 style={style.title}>what <br />did you do?</h1>
           <img style={style.silhouette}/>

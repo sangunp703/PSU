@@ -61,7 +61,9 @@ const styles = {
       zIndex: '5'
     },
     items: {
-      fontSize: '2rem',
+      width: '100%',
+      height: '100%',
+      fontSize: '2vw',
       cursor: 'pointer',
       fontWeight: 'bold',
       textTransform: 'uppercase'
@@ -73,15 +75,29 @@ const styles = {
       width: '100%',
       height: '100%'
     },
+    backArea:{
+      position: 'absolute',
+      width: '10%',
+      height: '100%',
+      left: '0'
+    },
     back: {
       content: 'url("./resource/back.png")',
       position: 'absolute',
       width: '50px',
       height: '50px',
       top: '50%',
-      left: '5%',
-      transform: 'translateY(-50%)',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      opacity: '0',
+      transitionDuration: '1s',
       cursor: 'pointer'
+    },
+    nextArea:{
+      position: 'absolute',
+      width: '10%',
+      height: '100%',
+      right: '0'
     },
     next: {
       content: 'url("./resource/next.png")',
@@ -89,8 +105,10 @@ const styles = {
       width: '50px',
       height: '50px',
       top: '50%',
-      right: '5%',
-      transform: 'translateY(-50%)',
+      right: '50%',
+      transform: 'translate(50%, -50%)',
+      opacity: '0',
+      transitionDuration: '1s',
       cursor: 'pointer'
     }
   },

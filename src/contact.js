@@ -29,8 +29,8 @@ export default class Contact extends Component{
     return (
       <div>
         <header style={style.header}>
-          <MainHeader color="#685357" jump={this.headerCallback}/>
-          <SideArrow jump={this.headerCallback} path={'/contact'} />
+          <MainHeader color="#685357" jump={this.headerCallback} path={'contact'}/>
+          <SideArrow jump={this.headerCallback} path={'contact'} />
           <BottomArrow />
           <h1 style={style.title}>How<br />can i reach you?</h1>
           <img style={style.silhouette}/>
