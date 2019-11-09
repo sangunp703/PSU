@@ -20,9 +20,31 @@ const styles = {
       whiteSpace: 'nowrap',
       cursor: 'default'
     },
+    warning: {
+      position: 'absolute',
+      bottom: '20%',
+      left: '50%',
+      transform: 'translateX(-50%)',
+      display: 'none'
+    },
+    musicChoice:{
+      float: 'left',
+      width: '40px',
+      height: '40px',
+      padding: '6px',
+      borderRadius: '10px',
+      border: '1px solid black',
+      marginRight: '20px',
+      transitionDuration: '1s',
+      cursor: 'pointer'
+    },
+    word:{
+      float: 'left',
+      fontSize: '18px'
+    },
     button: {
       position: 'absolute',
-      bottom: '15%',
+      bottom: '10%',
       left: '50%',
       transform: 'translateX(-50%)',
       fontSize: '50px',
@@ -181,7 +203,8 @@ const styles = {
     },
     item:{
       width:'20px',
-      height:'20px'
+      height:'20px',
+      cursor: 'pointer'
     },
     icon:{
       position: 'absolute',

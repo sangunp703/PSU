@@ -9,7 +9,7 @@ export default class Opening extends Component{
   constructor(props){
     super(props)
     this.state = {
-      jump: '', hold: false
+      jump: '', hold: false, music: true
     }
   }
   mouseDrag(e){
@@ -20,6 +20,7 @@ export default class Opening extends Component{
       const name_s = 12 * img_w * 0.01
       const button = document.querySelector('.go')
       const ask = document.querySelector('.ask')
+      const warning = document.querySelector('.warning')
       
       if(img_w >= 5 && img_w <= 90){
         control.style.left = img_w + '%'
@@ -28,8 +29,10 @@ export default class Opening extends Component{
       }
       if(img_w >= 90){
         button.style.display = 'block'
+        warning.style.display = 'block'
       } else {
         button.style.display = 'none'
+        warning.style.display = 'none'
       }
     }
   }
@@ -43,9 +46,21 @@ export default class Opening extends Component{
     ask.style.display = 'block'
     this.setState({hold: false})
   }
+  musicToggle(e){
+    const musicIcon = document.querySelector('.musicIcon')
+    if(this.state.music){
+      musicIcon.style.content = 'url("./resource/no_headset.png")'
+      this.setState({music: false})
+    } else {
+      musicIcon.style.content = 'url("./resource/headset.png")'
+      this.setState({music: true})
+    }
+  }
   next(e){
     audio.volumeInit()
-    audio.playMusic()
+    if(this.state.music){
+      audio.playMusic()
+    }
     this.setState({jump: '/introduction'})
   }
   render(){
@@ -58,8 +73,15 @@ export default class Opening extends Component{
         onMouseUp={e => this.mouseUp(e)}
         onMouseLeave={e => this.mouseUp(e)}>
         <h1 class="name" style={style.name}>PARK SANG UN</h1>
+        <div class="warning" style={style.warning}>
+          <img src="./resource/headset.png" class ="musicIcon" style={style.musicChoice}
+            onClick={e => this.musicToggle(e)}
+            onMouseOver={e => e.target.style.boxShadow = "0px 0px 20px 3px rgba(0,0,0,0.75)"}
+            onMouseOut={e => e.target.style.boxShadow = "none"}/>
+          <p style={style.word}><strong>WARNING!!</strong><br />This web site includes music.<br />Make sure your choice with a button on the left</p>
+        </div>
         <p class="go" style={style.button}
-          onMouseOver={e => e.target.style.color="black"} 
+          onMouseOver={e => e.target.style.color = "black"} 
           onMouseOut={e => e.target.style.color = "white"}
           onClick={e => this.next(e)}>Let's find out</p>
         <p class="ask" style={style.ask}>Drag me!</p>
