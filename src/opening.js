@@ -3,6 +3,7 @@ import {Redirect} from 'react-router-dom'
 import styles from './styles'
 
 const style = styles.opening
+const audio = require('./function/audioControl')
 
 export default class Opening extends Component{
   constructor(props){
@@ -43,6 +44,8 @@ export default class Opening extends Component{
     this.setState({hold: false})
   }
   next(e){
+    audio.volumeInit()
+    audio.playMusic()
     this.setState({jump: '/introduction'})
   }
   render(){

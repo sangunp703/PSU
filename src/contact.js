@@ -3,6 +3,7 @@ import {Redirect} from 'react-router-dom'
 import MainHeader from './component/mainHeader'
 import SideArrow from './component/sideArrow'
 import BottomArrow from './component/bottomArrow'
+import AudioBox from './component/audioBox'
 import styles from './styles'
 
 const style = styles.contact
@@ -32,6 +33,7 @@ export default class Contact extends Component{
           <MainHeader color="#685357" jump={this.headerCallback} path={'contact'}/>
           <SideArrow jump={this.headerCallback} path={'contact'} />
           <BottomArrow />
+          <AudioBox color="#685357"/>
           <h1 style={style.title}>How<br /><p style={style.text}>how can i reach you?</p></h1>
           <img style={style.silhouette}/>
         </header>

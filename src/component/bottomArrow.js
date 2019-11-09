@@ -7,9 +7,6 @@ const style = styles.bottomArrow
 export default class BottomArrow extends Component {
   constructor(props){
     super(props)
-    this.state = {
-      jump: ''
-    }
   }
   arrowOver(e){
     const arrow = document.querySelectorAll('.arrow')

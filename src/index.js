@@ -9,6 +9,7 @@ import Contact from './contact'
 
 const PSUApp = () => (
   <Router>
+    <audio volume="0.1" autoplay class="audio"> <source src="./resource/Wake_me_up_cover_by_JFla.mp3" type="audio/mp3"/></audio>
     <div>
       <Switch>
         <Route path='/opening' component={Opening} />

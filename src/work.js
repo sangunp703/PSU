@@ -3,6 +3,7 @@ import {Redirect} from 'react-router-dom'
 import MainHeader from './component/mainHeader'
 import SideArrow from './component/sideArrow'
 import BottomArrow from './component/bottomArrow'
+import AudioBox from './component/audioBox'
 import styles from './styles'
 
 const style = styles.work
@@ -32,6 +33,7 @@ export default class Work extends Component{
           <MainHeader color="#265E62" jump={this.headerCallback} path={'work'}/>
           <SideArrow jump={this.headerCallback} path={'work'} />
           <BottomArrow />
+          <AudioBox color="#265E62"/>
           <h1 style={style.title}>what <br /><p style={style.text}>what did you do?</p></h1>
           <img style={style.silhouette}/>
         </header>

@@ -142,6 +142,61 @@ const styles = {
       width: '30px'
     }
   },
+  audioBox:{
+    container: {
+      position: 'fixed',
+      bottom: '0',
+      left: '0',
+      width: '15%',
+      height: '20%',
+      zIndex: '5'
+    },
+    music: {
+      position: 'absolute',
+      top: '5%',
+      left: '50%',
+      transform: 'translateX(-50%)',
+      width: '80%',
+      borderRadius: '5px',
+      border: '1px dashed gray',
+      textAlign: 'center',
+      display: 'none'
+    },
+    title: {
+      marginTop: '40px',
+      display: 'block',
+      fontWeight: 'bold'
+    },
+    singer: {
+      display: 'block',
+      margin: '10px 0',
+      fontWeight: 'bold'
+    },
+    controller:{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(4, 1fr)',
+      justifyItems: 'center',
+      alignItems: 'center',
+      margin: '20px 0'
+    },
+    item:{
+      width:'20px',
+      height:'20px'
+    },
+    icon:{
+      position: 'absolute',
+      content: 'url("./resource/headset.png")',
+      width:'35px',
+      height:'35px',
+      padding: '10px',
+      top: '5%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      borderRadius: '20px',
+      zIndex: '10',
+      cursor: 'pointer'
+    }
+  },
   introduction:{
     header: {
       position: 'relative',
