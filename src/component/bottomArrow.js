@@ -11,12 +11,26 @@ export default class BottomArrow extends Component {
       jump: ''
     }
   }
+  arrowOver(e){
+    const arrow = document.querySelectorAll('.arrow')
+    for(let i = 0; i<3; i++){
+      arrow[i].style.top = "50%"
+    }
+  }
+  arrowOut(e){
+    const arrow = document.querySelectorAll('.arrow')
+    for(let i = 0; i<3; i++){
+      arrow[i].style.top = "0"
+    }
+  }
   render(){
     return (
-      <div style={style.arrowBox}>
-        <img style={style.arrow}/>
-        <img style={style.arrow}/>
-        <img style={style.arrow}/>
+      <div style={style.arrowBox}
+        onMouseOver={e => this.arrowOver(e)}
+        onMouseOut={e => this.arrowOut(e)}>
+        <div><img class="arrow" style={style.arrow}/></div>
+        <div><img class="arrow" style={style.arrow}/></div>
+        <div><img class="arrow" style={style.arrow}/></div>
       </div>
     )
   }

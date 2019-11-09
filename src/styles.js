@@ -122,10 +122,12 @@ const styles = {
       gridTemplateColumns: 'repeat(3, 1fr)',
       justifyItems: 'center',
       alignItems: 'center'
-      
     },
     arrow: {
+      position: 'absolute',
       content: 'url("./resource/arrow_down.png")',
+      top: '0',
+      transitionDuration: '1s',
       height: '30px',
       width: '30px'
     }
