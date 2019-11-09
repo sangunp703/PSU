@@ -267,7 +267,7 @@ const styles = {
       position: 'absolute',
       top: '40%',
       right: '0',
-      transform: 'translateY(-40%)',
+      transform: 'translateY(-50%)',
       content: 'url("./resource/history_img.png")',
       width: '55vw',
       height: '40vw'
@@ -302,11 +302,11 @@ const styles = {
     silhouette:{
       position: 'absolute',
       top: '50%',
-      right: '15%',
+      right: '10%',
       transform: 'translateY(-50%)',
       content: 'url("./resource/work_img.png")',
-      width: '35vw',
-      height: '32vw'
+      width: '40vw',
+      height: '37vw'
     },
     title: {
       position: 'absolute',
@@ -338,11 +338,11 @@ const styles = {
     silhouette:{
       position: 'absolute',
       top: '50%',
-      right: '20%',
+      right: '15%',
       transform: 'translateY(-50%)',
       content: 'url("./resource/contact_img.png")',
-      width: '20vw',
-      height: '30vw'
+      width: '40vw',
+      height: '25vw'
     },
     title: {
       position: 'absolute',
