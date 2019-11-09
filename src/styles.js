@@ -66,20 +66,21 @@ const styles = {
       fontSize: '2vw',
       cursor: 'pointer',
       fontWeight: 'bold',
-      textTransform: 'uppercase'
+      textTransform: 'uppercase',
     },
   },
   sideArrow: {
     arrowBox: {
       position: 'relative',
       width: '100%',
-      height: '100%'
+      height: '100%',
     },
     backArea:{
       position: 'absolute',
       width: '10%',
       height: '100%',
-      left: '0'
+      left: '0',
+      zIndex: '5'
     },
     back: {
       content: 'url("./resource/back.png")',
@@ -97,7 +98,8 @@ const styles = {
       position: 'absolute',
       width: '10%',
       height: '100%',
-      right: '0'
+      right: '0',
+      zIndex: '5'
     },
     next: {
       content: 'url("./resource/next.png")',
@@ -121,12 +123,20 @@ const styles = {
       display: 'grid',
       gridTemplateColumns: 'repeat(3, 1fr)',
       justifyItems: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+      zIndex: '5'
+    },
+    item:{
+      position: 'relative',
+      width: '100%',
+      height:'100%'
     },
     arrow: {
       position: 'absolute',
       content: 'url("./resource/arrow_down.png")',
       top: '0',
+      left: '50%',
+      transform: 'translateX(-50%)',
       transitionDuration: '1s',
       height: '30px',
       width: '30px'
@@ -144,7 +154,7 @@ const styles = {
       top: '50%',
       right: '15%',
       transform: 'translateY(-50%)',
-      content: 'url("./resource/silhouette.png")',
+      content: 'url("./resource/introduction_img.png")',
       width: '35vw',
       height: '28vw'
     },
@@ -153,9 +163,14 @@ const styles = {
       top: '50%',
       left: '15%',
       transform: 'translateY(-50%)',
-      fontSize: '3vw',
+      fontSize: '10vw',
       fontWeight: 'bold',
-      textTransform: 'uppercase'
+      textTransform: 'uppercase',
+      textAlign: 'center'
+    },
+    text:{
+      fontSize: '1.5vw',
+      marginTop: '1vw'
     },
     section: {
       height: '2000px',
@@ -172,21 +187,26 @@ const styles = {
     },
     silhouette:{
       position: 'absolute',
-      top: '50%',
-      right: '15%',
-      transform: 'translateY(-50%)',
-      content: 'url("./resource/silhouette.png")',
-      width: '35vw',
-      height: '28vw'
+      top: '40%',
+      right: '0',
+      transform: 'translateY(-40%)',
+      content: 'url("./resource/history_img.png")',
+      width: '55vw',
+      height: '40vw'
     },
     title: {
       position: 'absolute',
       top: '50%',
       left: '15%',
       transform: 'translateY(-50%)',
-      fontSize: '3vw',
+      fontSize: '10vw',
       fontWeight: 'bold',
-      textTransform: 'uppercase'
+      textTransform: 'uppercase',
+      textAlign: 'center'
+    },
+    text:{
+      fontSize: '1.5vw',
+      marginTop: '1vw'
     },
     section: {
       height: '2000px',
@@ -206,18 +226,23 @@ const styles = {
       top: '50%',
       right: '15%',
       transform: 'translateY(-50%)',
-      content: 'url("./resource/silhouette.png")',
+      content: 'url("./resource/work_img.png")',
       width: '35vw',
-      height: '28vw'
+      height: '32vw'
     },
     title: {
       position: 'absolute',
       top: '50%',
       left: '15%',
       transform: 'translateY(-50%)',
-      fontSize: '3vw',
+      fontSize: '10vw',
       fontWeight: 'bold',
-      textTransform: 'uppercase'
+      textTransform: 'uppercase',
+      textAlign: 'center'
+    },
+    text:{
+      fontSize: '1.5vw',
+      marginTop: '1vw'
     },
     section: {
       height: '2000px',
@@ -235,20 +260,25 @@ const styles = {
     silhouette:{
       position: 'absolute',
       top: '50%',
-      right: '15%',
+      right: '20%',
       transform: 'translateY(-50%)',
-      content: 'url("./resource/silhouette.png")',
-      width: '35vw',
-      height: '28vw'
+      content: 'url("./resource/contact_img.png")',
+      width: '20vw',
+      height: '30vw'
     },
     title: {
       position: 'absolute',
       top: '50%',
       left: '15%',
       transform: 'translateY(-50%)',
-      fontSize: '3vw',
+      fontSize: '10vw',
       fontWeight: 'bold',
-      textTransform: 'uppercase'
+      textTransform: 'uppercase',
+      textAlign: 'center'
+    },
+    text:{
+      fontSize: '1.5vw',
+      marginTop: '1vw'
     },
     section: {
       height: '2000px',

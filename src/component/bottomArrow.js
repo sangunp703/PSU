@@ -28,9 +28,9 @@ export default class BottomArrow extends Component {
       <div style={style.arrowBox}
         onMouseOver={e => this.arrowOver(e)}
         onMouseOut={e => this.arrowOut(e)}>
-        <div><img class="arrow" style={style.arrow}/></div>
-        <div><img class="arrow" style={style.arrow}/></div>
-        <div><img class="arrow" style={style.arrow}/></div>
+        <div style={style.item}><img class="arrow" style={style.arrow}/></div>
+        <div style={style.item}><img class="arrow" style={style.arrow}/></div>
+        <div style={style.item}><img class="arrow" style={style.arrow}/></div>
       </div>
     )
   }

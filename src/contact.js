@@ -32,7 +32,7 @@ export default class Contact extends Component{
           <MainHeader color="#685357" jump={this.headerCallback} path={'contact'}/>
           <SideArrow jump={this.headerCallback} path={'contact'} />
           <BottomArrow />
-          <h1 style={style.title}>How<br />can i reach you?</h1>
+          <h1 style={style.title}>How<br /><p style={style.text}>how can i reach you?</p></h1>
           <img style={style.silhouette}/>
         </header>
         <section style={style.section}>
