@@ -38,7 +38,7 @@ export default class Introduction extends Component{
           <img style={style.silhouette}/>
         </header>
         <section style={style.section}>
-          hello
+          <img style={style.centerImg} src="./resource/introduction_img.png" />
         </section>
       </div>
     )

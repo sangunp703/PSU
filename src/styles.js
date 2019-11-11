@@ -80,7 +80,7 @@ const styles = {
       display: 'grid',
       gridTemplateColumns: 'repeat(4, 1fr)',
       textAlign: 'center',
-      zIndex: '5'
+      zIndex: '10'
     },
     items: {
       width: '100%',
@@ -251,9 +251,20 @@ const styles = {
       marginTop: '1vw'
     },
     section: {
-      height: '2000px',
+      position: 'relative',
+      height: '100vh',
       width: '100vw',
       backgroundColor: 'white'
+    },
+    centerImg: {
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      width: '200px',
+      height: '200px',
+      transform: 'translate(-50%, -50%)',
+      borderRadius: '100px',
+      border: '1px solid black'
     }
   },
   history:{
@@ -359,9 +370,34 @@ const styles = {
       marginTop: '1vw'
     },
     section: {
-      height: '2000px',
+      height: '100vh',
       width: '100vw',
-      backgroundColor: 'white'
+      backgroundColor: 'white',
+      position: 'relative'
+    },
+    outCircle: {
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      width: '600px',
+      height: '600px',
+      borderRadius: '350px',
+      border: '10px solid #685357'
+    },
+    inCircle: {
+      position: 'absolute',
+      display: 'grid',
+      justifyItems: 'center',
+      alignItems: 'center',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      width: '575px',
+      height: '575px',
+      borderRadius: '300px',
+      backgroundColor: '#685357',
+      textAlign: 'center'
     }
   }
 }

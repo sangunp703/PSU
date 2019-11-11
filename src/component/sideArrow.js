@@ -12,6 +12,18 @@ export default class SideArrow extends Component {
       jump: '', path: ''
     }
   }
+  componentDidMount(){
+    if(screen.indexOf('/' + this.props.path) === 3){
+      document.querySelector('.next').style.display = "none"
+    } else {
+      document.querySelector('.next').style.display = "block"
+    }
+    if(screen.indexOf('/' + this.props.path) === 0){
+      document.querySelector('.back').style.display = "none"
+    } else {
+      document.querySelector('.back').style.display = "block"
+    }
+  }
   next(e){
     const path = screen.indexOf('/' + this.props.path)
     if(path !== 3){

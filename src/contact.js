@@ -38,7 +38,16 @@ export default class Contact extends Component{
           <img style={style.silhouette}/>
         </header>
         <section style={style.section}>
-          hello
+          <div style={style.outCircle}>
+            <div style={style.inCircle}>
+              <img />
+              <p>010-2285-0814</p>
+              <img />
+              <p>sangunp703@naver.com</p>
+              <img />
+              <a href="https://github.com/sangunp703">https://github.com/sangunp703</a>
+            </div>
+          </div>
         </section>
       </div>
     )
