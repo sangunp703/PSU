@@ -334,9 +334,19 @@ const styles = {
       marginTop: '1vw'
     },
     section: {
-      height: '2000px',
+      height: '1200px',
       width: '100vw',
-      backgroundColor: 'white'
+      backgroundColor: 'white',
+      textAlign: 'center'
+    },
+    article: {
+      width: '1200px',
+      paddingTop: '10vw',
+      margin: '0 auto'
+    },
+    workTitle: {
+      fontSize: '1vw',
+      margin: '1vw 0'
     }
   },
   contact:{
@@ -370,7 +380,7 @@ const styles = {
       marginTop: '1vw'
     },
     section: {
-      height: '100vh',
+      height: '100vw',
       width: '100vw',
       backgroundColor: 'white',
       position: 'relative'
@@ -380,24 +390,62 @@ const styles = {
       top: '50%',
       left: '50%',
       transform: 'translate(-50%, -50%)',
-      width: '600px',
-      height: '600px',
-      borderRadius: '350px',
+      width: '37vw',
+      height: '37vw',
+      borderRadius: '19vw',
       border: '10px solid #685357'
     },
     inCircle: {
       position: 'absolute',
       display: 'grid',
+      gridTemplateRows: 'repeat(3, 2fr 3fr)',
       justifyItems: 'center',
       alignItems: 'center',
       top: '50%',
       left: '50%',
       transform: 'translate(-50%, -50%)',
-      width: '575px',
-      height: '575px',
-      borderRadius: '300px',
+      width: '35vw',
+      height: '35vw',
+      borderRadius: '18vw',
       backgroundColor: '#685357',
       textAlign: 'center'
+    },
+    icon: {
+      width: '2vw',
+      height: '2vw'
+    },
+    info:{
+      fontSize: '1.5vw',
+      color: 'white',
+      textDecoration: 'none'
+    }
+  },
+  workBox:{
+    frame: {
+      position: 'relative',
+      width: '1000px',
+      height: '488px',
+      margin: '0 auto',
+      textAlign: 'center'
+    },
+    image: {
+      width: '1000px',
+      height: '488px',
+      border: '1px solid gray',
+      margin: '0 auto'
+    },
+    explain: {
+      position: 'absolute',
+      width: '1000px',
+      display: 'none',
+      height: '488px',
+      left: '50%',
+      top: '50%',
+      transform: 'translate(-50%, -50%)',
+      transitionDuration: '1s',
+      backgroundColor: 'rgba(0,0,0,0.7)',
+      color: 'white',
+      cursor: 'pointer'
     }
   }
 }

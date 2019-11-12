@@ -40,12 +40,12 @@ export default class Contact extends Component{
         <section style={style.section}>
           <div style={style.outCircle}>
             <div style={style.inCircle}>
-              <img />
-              <p>010-2285-0814</p>
-              <img />
-              <p>sangunp703@naver.com</p>
-              <img />
-              <a href="https://github.com/sangunp703">https://github.com/sangunp703</a>
+              <img style={style.icon} src="./resource/phone.png"/>
+              <p style={style.info}>010-2285-0814</p>
+              <img style={style.icon} src="./resource/envelope.png"/>
+              <p style={style.info}>sangunp703@naver.com</p>
+              <img style={style.icon} src="./resource/git.png"/>
+              <a style={style.info} href="https://github.com/sangunp703">https://github.com/sangunp703</a>
             </div>
           </div>
         </section>

@@ -4,6 +4,7 @@ import MainHeader from './component/mainHeader'
 import SideArrow from './component/sideArrow'
 import BottomArrow from './component/bottomArrow'
 import AudioBox from './component/audioBox'
+import WorkBox from './component/workBox'
 import styles from './styles'
 
 const style = styles.work
@@ -38,7 +39,26 @@ export default class Work extends Component{
           <img style={style.silhouette}/>
         </header>
         <section style={style.section}>
-          hello
+          <article style = {style.article}>
+            <h1>Publishing</h1>
+            <hr />
+            <h2 style={style.workTitle}>title</h2>
+            <WorkBox />
+            <h2 style={style.workTitle}>title</h2>
+            <WorkBox />
+            <h2 style={style.workTitle}>title</h2>
+            <WorkBox />
+          </article>
+          <article style = {style.article}>
+            <h1>JS</h1>
+            <hr />
+            <h2 style={style.workTitle}>title</h2>
+            <WorkBox />
+            <h2 style={style.workTitle}>title</h2>
+            <WorkBox />
+            <h2 style={style.workTitle}>title</h2>
+            <WorkBox />
+          </article>
         </section>
       </div>
     )
