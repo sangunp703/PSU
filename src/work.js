@@ -24,6 +24,9 @@ export default class Work extends Component{
       })
     }
   }
+  componentDidUpdate() {
+    window.scrollTo(0, 0)
+  }
   render(){
     if(this.state.jump){
       return <Redirect to={this.state.jump} />
@@ -40,7 +43,7 @@ export default class Work extends Component{
         </header>
         <section style={style.section}>
           <article style = {style.article}>
-            <h1>Publishing</h1>
+            <h1 style={style.articleTitle}>Publishing</h1>
             <hr />
             <h2 style={style.workTitle}>title</h2>
             <WorkBox />
@@ -50,7 +53,7 @@ export default class Work extends Component{
             <WorkBox />
           </article>
           <article style = {style.article}>
-            <h1>JS</h1>
+            <h1 style={style.articleTitle}>JS</h1>
             <hr />
             <h2 style={style.workTitle}>title</h2>
             <WorkBox />

@@ -14,6 +14,15 @@ export default class MainHeader extends Component {
   componentDidMount(){
     document.querySelector('.nav').style.backgroundColor = this.state.color
     document.querySelector('.' + this.props.path).style.borderBottom = '2px dashed black'
+    document.querySelector('.' + this.props.path).style.color = "white"
+  }
+  mouseOver(e){
+    e.target.style.color="white"
+  }
+  mouseOut(e){
+    if(e.target.className !== this.props.path){
+      e.target.style.color="black"
+    }
   }
   render(){
     return (
@@ -21,20 +30,20 @@ export default class MainHeader extends Component {
         <ul class="nav" style={style.nav}>
           <li class="introduction" style={style.items}
             onClick={() => this.props.jump('/introduction')}
-            onMouseOver={e => e.target.style.color="white"}
-            onMouseOut={e => e.target.style.color="black"}>Introduction</li>
+            onMouseOver={e => this.mouseOver(e)}
+            onMouseOut={e => this.mouseOut(e)}>Introduction</li>
           <li class="history" style={style.items}
             onClick={() => this.props.jump('/history')}
-            onMouseOver={e => e.target.style.color="white"}
-            onMouseOut={e => e.target.style.color="black"}>History</li>
+            onMouseOver={e => this.mouseOver(e)}
+            onMouseOut={e => this.mouseOut(e)}>History</li>
           <li class="work" style={style.items}
             onClick={() => this.props.jump('/work')}
-            onMouseOver={e => e.target.style.color="white"}
-            onMouseOut={e => e.target.style.color="black"}>Work</li>
+            onMouseOver={e => this.mouseOver(e)}
+            onMouseOut={e => this.mouseOut(e)}>Work</li>
           <li class="contact" style={style.items}
             onClick={() => this.props.jump('/contact')}
-            onMouseOver={e => e.target.style.color="white"}
-            onMouseOut={e => e.target.style.color="black"}>Contact</li>
+            onMouseOver={e => this.mouseOver(e)}
+            onMouseOut={e => this.mouseOut(e)}>Contact</li>
         </ul>
       </nav>
     )

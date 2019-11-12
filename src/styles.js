@@ -202,8 +202,8 @@ const styles = {
       margin: '20px 0'
     },
     item:{
-      width:'20px',
-      height:'20px',
+      width:'15px',
+      height:'15px',
       cursor: 'pointer'
     },
     icon:{
@@ -334,18 +334,22 @@ const styles = {
       marginTop: '1vw'
     },
     section: {
-      height: '1200px',
       width: '100vw',
       backgroundColor: 'white',
       textAlign: 'center'
     },
     article: {
-      width: '1200px',
+      width: '60vw',
       paddingTop: '10vw',
       margin: '0 auto'
     },
+    articleTitle: {
+      fontSize: '3vw',
+      textTransform: 'uppercase',
+      fontWeight: 'bold'
+    },
     workTitle: {
-      fontSize: '1vw',
+      fontSize: '2vw',
       margin: '1vw 0'
     }
   },
@@ -380,16 +384,16 @@ const styles = {
       marginTop: '1vw'
     },
     section: {
-      height: '100vw',
+      height: '100vh',
       width: '100vw',
       backgroundColor: 'white',
       position: 'relative'
     },
     outCircle: {
       position: 'absolute',
-      top: '50%',
+      top: '60%',
       left: '50%',
-      transform: 'translate(-50%, -50%)',
+      transform: 'translate(-50%, -60%)',
       width: '37vw',
       height: '37vw',
       borderRadius: '19vw',
@@ -415,7 +419,7 @@ const styles = {
       height: '2vw'
     },
     info:{
-      fontSize: '1.5vw',
+      fontSize: '2vw',
       color: 'white',
       textDecoration: 'none'
     }
@@ -423,22 +427,22 @@ const styles = {
   workBox:{
     frame: {
       position: 'relative',
-      width: '1000px',
-      height: '488px',
+      width: '60vw',
+      height: '29vw',
       margin: '0 auto',
       textAlign: 'center'
     },
     image: {
-      width: '1000px',
-      height: '488px',
+      width: '100%',
+      height: '100%',
       border: '1px solid gray',
       margin: '0 auto'
     },
     explain: {
       position: 'absolute',
-      width: '1000px',
+      width: '100%',
       display: 'none',
-      height: '488px',
+      height: '100%',
       left: '50%',
       top: '50%',
       transform: 'translate(-50%, -50%)',

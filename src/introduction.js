@@ -23,6 +23,9 @@ export default class Introduction extends Component{
       })
     }
   }
+  componentDidUpdate() {
+    window.scrollTo(0, 0)
+  }
   render(){
     if(this.state.jump){
       return <Redirect to={this.state.jump} />
