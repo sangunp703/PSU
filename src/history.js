@@ -5,6 +5,7 @@ import SideArrow from './component/sideArrow'
 import BottomArrow from './component/bottomArrow'
 import AudioBox from './component/audioBox'
 import styles from './styles'
+import HistoryBox from './component/historyBox'
 
 const style = styles.history
 
@@ -41,7 +42,19 @@ export default class History extends Component{
           <img style={style.silhouette}/>
         </header>
         <section style={style.section}>
-          hello
+          <div style={style.imageFrame}><img src="/resource/next.png" style={style.startIcon} /></div>
+          <div>
+            <div style={style.verticalLine}></div>
+            <div style={style.grid}>
+              <div style={style.gridx}><HistoryBox LR="L"/></div>
+              <div style={style.gridItem}><HistoryBox LR="R"/></div>
+              <div style={style.gridx}><HistoryBox LR="L"/></div>
+              <div style={style.gridx}><HistoryBox LR="R"/></div>
+              <div style={style.gridx}><HistoryBox LR="L"/></div>
+              <div style={style.gridx}><HistoryBox LR="R"/></div>
+              <div style={style.gridx}><HistoryBox LR="L"/></div>
+            </div>
+          </div>
         </section>
       </div>
     )
