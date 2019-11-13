@@ -24,6 +24,7 @@ export default class HistoryBox extends Component {
   loadImg(e){
     if(this.props.LR === 'R'){
       e.currentTarget.querySelector(".historyImgFrame").style.left = "0%"
+      e.currentTarget.querySelector(".img").style.content="url(../resource/next.png)"
     }
   }
   render(){
@@ -31,7 +32,7 @@ export default class HistoryBox extends Component {
       <div class="historyFrame" style={style.frame}
         onLoad={e => this.loadImg(e)}>
         <div class="historyImgFrame" style={style.imageFrame}
-          onClick={e => this.boxClick(e)}><img src="../resource/next.png" style={style.icon}/></div>
+          onClick={e => this.boxClick(e)}><img class="img" src="../resource/back.png" style={style.icon}/></div>
         <div class="story" style={style.story}>hello</div>
       </div>
     )

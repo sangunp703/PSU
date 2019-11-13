@@ -5,6 +5,7 @@ import SideArrow from './component/sideArrow'
 import BottomArrow from './component/bottomArrow'
 import AudioBox from './component/audioBox'
 import WorkBox from './component/workBox'
+import Footer from './component/footer'
 import styles from './styles'
 
 const style = styles.work
@@ -15,9 +16,9 @@ export default class Work extends Component{
     this.state = {
       jump: ''
     }
-    this.headerCallback = this.headerCallback.bind(this)
+    this.jumpCallback = this.jumpCallback.bind(this)
   }
-  headerCallback = (jumpData) => {
+  jumpCallback = (jumpData) => {
     if(jumpData !== '/work'){ // 현재 페이지로 redirect 할 때 렌더링이 안되는 현상 방지
       this.setState({
         jump: jumpData
@@ -34,8 +35,8 @@ export default class Work extends Component{
     return (
       <div>
         <header style={style.header}>
-          <MainHeader color="#265E62" jump={this.headerCallback} path={'work'}/>
-          <SideArrow jump={this.headerCallback} path={'work'} />
+          <MainHeader color="#265E62" jump={this.jumpCallback} path={'work'}/>
+          <SideArrow jump={this.jumpCallback} path={'work'} />
           <BottomArrow />
           <AudioBox color="#265E62"/>
           <h1 style={style.title}>what <br /><p style={style.text}>what did you do?</p></h1>
@@ -63,6 +64,8 @@ export default class Work extends Component{
             <WorkBox />
           </article>
         </section>
+        <hr />
+        <Footer jump={this.jumpCallback}/>
       </div>
     )
   }

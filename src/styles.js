@@ -300,50 +300,9 @@ const styles = {
     section: {
       position: 'relative',
       width: '100vw',
-      paddingTop: '5%',
       backgroundColor: 'white',
-      textAlign: 'center'
-    },
-    verticalLine: {
-      width: '1px',
-      height: '100%',
-      position: 'absolute',
-      left: '50%',
-      transform: 'translateX(-50%)',
-      backgroundColor: 'black'
-    },
-    imageFrame:{
-      position : 'absolute',
-      left: '50%',
-      transform: 'translateX(-50%)',
-      width: '50px',
-      height: '50px',
-      backgroundColor: 'white',
-      borderRadius: '25px',
-      border: '1px solid black',
-      cursor: 'pointer',
-      zIndex: '1'
-    },
-    startIcon:{
-      width: '100%',
-      height: '100%'
-    },
-    grid: {
-      display: 'grid',
-      gridTemplateColumns: '1fr 1fr',
-      gridTemplateRows: 'repeat(8, 120px)',
-      gridGap: '60px',
-      width: '70%',
-      margin: '0 auto'
-    },
-    gridItem:{
-      position: 'relative',
-      gridColumn: '2/3',
-      gridRow: '2/4'
-    },
-    gridx:{
-      position: 'relative',
-      gridRow: 'span 2'
+      textAlign: 'center',
+      padding: '100px 0'
     }
   },
   work:{
@@ -500,7 +459,7 @@ const styles = {
       position: 'absolute',
       left: '50%',
       transform: 'translateX(-50%)',
-      width: '400px',
+      width: '25vw',
       height: '300px'
     },
     imageFrame:{
@@ -524,6 +483,70 @@ const styles = {
       height: '100%',
       display: 'none',
       border: '1px solid black'
+    }
+  },
+  historyTree:{
+    verticalLine: {
+      width: '1px',
+      height: '90%',
+      position: 'absolute',
+      left: '50%',
+      transform: 'translateX(-50%)',
+      backgroundColor: 'black'
+    },
+    imageFrame:{
+      position : 'absolute',
+      left: '50%',
+      transform: 'translateX(-50%)',
+      width: '100px',
+      height: '100px',
+      backgroundColor: 'white',
+      cursor: 'pointer',
+      zIndex: '1'
+    },
+    startIcon:{
+      width: '100%',
+      height: '100%'
+    },
+    grid: {
+      paddingTop: '100px',
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gridTemplateRows: 'repeat(8, 120px)',
+      gridGap: '60px',
+      width: '70%',
+      margin: '0 auto'
+    },
+    gridItem:{
+      position: 'relative',
+      gridColumn: '2/3',
+      gridRow: '2/4'
+    },
+    gridx:{
+      position: 'relative',
+      gridRow: 'span 2'
+    },
+    tree: {
+      width: '40vw',
+      height: '40vw'
+    }
+  },
+  footer:{
+    container: {
+      display: "grid",
+      gridTemplateColumns: 'repeat(3, 1fr)',
+      gridGap: '50px',
+      width: '70vw',
+      height: '100px',
+      margin: '0 auto',
+      alignItems: 'center',
+      justifyItems: 'center',
+      textAlign: 'center'
+    },
+    title: {
+      fontSize: '40px',
+      fontWeight: 'bold',
+      cursor: 'pointer'
     }
   }
 }

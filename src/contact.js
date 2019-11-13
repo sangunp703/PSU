@@ -4,6 +4,7 @@ import MainHeader from './component/mainHeader'
 import SideArrow from './component/sideArrow'
 import BottomArrow from './component/bottomArrow'
 import AudioBox from './component/audioBox'
+import Footer from './component/footer'
 import styles from './styles'
 
 const style = styles.contact
@@ -14,9 +15,9 @@ export default class Contact extends Component{
     this.state = {
       jump: ''
     }
-    this.headerCallback = this.headerCallback.bind(this)
+    this.jumpCallback = this.jumpCallback.bind(this)
   }
-  headerCallback = (jumpData) => {
+  jumpCallback = (jumpData) => {
     if(jumpData !== '/contact'){  // 현재 페이지로 redirect 할 때 렌더링이 안되는 현상 방지
       this.setState({
         jump: jumpData
@@ -33,8 +34,8 @@ export default class Contact extends Component{
     return (
       <div>
         <header style={style.header}>
-          <MainHeader color="#685357" jump={this.headerCallback} path={'contact'}/>
-          <SideArrow jump={this.headerCallback} path={'contact'} />
+          <MainHeader color="#685357" jump={this.jumpCallback} path={'contact'}/>
+          <SideArrow jump={this.jumpCallback} path={'contact'} />
           <BottomArrow />
           <AudioBox color="#685357"/>
           <h1 style={style.title}>How<br /><p style={style.text}>how can i reach you?</p></h1>
@@ -52,6 +53,8 @@ export default class Contact extends Component{
             </div>
           </div>
         </section>
+        <hr />
+        <Footer jump={this.jumpCallback}/>
       </div>
     )
   }

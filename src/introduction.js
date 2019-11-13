@@ -4,6 +4,7 @@ import MainHeader from './component/mainHeader'
 import SideArrow from './component/sideArrow'
 import BottomArrow from './component/bottomArrow'
 import AudioBox from './component/audioBox'
+import Footer from './component/footer'
 import styles from './styles'
 
 const style = styles.introduction
@@ -14,9 +15,9 @@ export default class Introduction extends Component{
     this.state = {
       jump: ''
     }
-    this.headerCallback = this.headerCallback.bind(this)
+    this.jumpCallback = this.jumpCallback.bind(this)
   }
-  headerCallback = (jumpData) => {
+  jumpCallback = (jumpData) => {
     if(jumpData !== '/introduction'){ // 현재 페이지로 redirect 할 때 렌더링이 안되는 현상 방지
       this.setState({
         jump: jumpData
@@ -33,8 +34,8 @@ export default class Introduction extends Component{
     return (
       <div>
         <header style={style.header}>
-          <MainHeader color="#ECB765" jump={this.headerCallback} path={'introduction'}/>
-          <SideArrow jump={this.headerCallback} path={'introduction'}/>
+          <MainHeader color="#ECB765" jump={this.jumpCallback} path={'introduction'}/>
+          <SideArrow jump={this.jumpCallback} path={'introduction'}/>
           <BottomArrow />
           <AudioBox color="#ECB765"/>
           <h1 style={style.title}>Who<br /><p style={style.text}>who is this guy?</p></h1>
@@ -43,6 +44,8 @@ export default class Introduction extends Component{
         <section style={style.section}>
           <img style={style.centerImg} src="./resource/introduction_img.png" />
         </section>
+        <hr />
+        <Footer jump={this.jumpCallback}/>
       </div>
     )
   }
