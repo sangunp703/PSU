@@ -6,8 +6,10 @@ import BottomArrow from './component/bottomArrow'
 import AudioBox from './component/audioBox'
 import Footer from './component/footer'
 import styles from './styles'
+import DragableBox from './component/dragableBox'
 
 const style = styles.introduction
+var count = 0
 
 export default class Introduction extends Component{
   constructor(props){
@@ -27,6 +29,16 @@ export default class Introduction extends Component{
   componentDidUpdate() {
     window.scrollTo(0, 0)
   }
+  imgClick(e){
+    const box = document.querySelectorAll('.dragableFrame')
+    if(count === 0){
+      e.target.style.content = 'url("./resource/me.jpg")'
+    }
+    for(let i = 0; i< 4; i++){
+      if(count >= i+1) box[i].style.display = 'block'
+    }
+    count++
+  }
   render(){
     if(this.state.jump){
       return <Redirect to={this.state.jump} />
@@ -42,7 +54,12 @@ export default class Introduction extends Component{
           <img style={style.silhouette}/>
         </header>
         <section style={style.section}>
-          <img style={style.centerImg} src="./resource/introduction_img.png" />
+          <img style={style.centerImg} src="./resource/introduction_img.png" 
+            onClick={e => this.imgClick(e)}/>
+          <DragableBox/>
+          <DragableBox/>
+          <DragableBox/>
+          <DragableBox/>
         </section>
         <hr />
         <Footer jump={this.jumpCallback}/>

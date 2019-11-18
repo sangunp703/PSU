@@ -14,7 +14,7 @@ export default class Footer extends Component {
         <div style={style.container}>
           <div style={style.title} onClick={e => this.props.jump('/opening')}>PSU</div>
           <div><p>designed by sangunpark</p><br /><p>created by sangunpark</p></div>
-          <div>Copylight 2019.</div>
+          <div>Copylight 2019. sangunpark. All rights reserved</div>
         </div>
       </footer>
     )

@@ -13,7 +13,6 @@ export default class MainHeader extends Component {
   }
   componentDidMount(){
     document.querySelector('.nav').style.backgroundColor = this.state.color
-    document.querySelector('.' + this.props.path).style.borderBottom = '2px dashed black'
     document.querySelector('.' + this.props.path).style.color = "white"
   }
   mouseOver(e){

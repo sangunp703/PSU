@@ -220,6 +220,17 @@ const styles = {
       cursor: 'pointer'
     }
   },
+  dragableBox:{
+    frame: {
+      position: 'absolute',
+      display: 'none',
+      width: '100px',
+      height: '100px',
+      backgroundColor: 'black',
+      color: 'white',
+      borderRadius: '50px'
+    }
+  },
   introduction:{
     header: {
       position: 'relative',
@@ -261,11 +272,12 @@ const styles = {
       top: '50%',
       left: '50%',
       width: '200px',
-      height: '200px',
+      height: '250px',
       transform: 'translate(-50%, -50%)',
       borderRadius: '100px',
-      border: '1px solid black'
-    }
+      border: '1px solid black',
+      cursor: 'pointer'
+    },
   },
   history:{
     header: {
@@ -548,7 +560,8 @@ const styles = {
       fontWeight: 'bold',
       cursor: 'pointer'
     }
-  }
+  },
+  
 }
 
 export default styles;
