@@ -28,16 +28,23 @@ export default class Introduction extends Component{
   }
   componentDidUpdate() {
     window.scrollTo(0, 0)
+    count = 0
   }
   imgClick(e){
     const box = document.querySelectorAll('.dragableFrame')
     if(count === 0){
-      e.target.style.content = 'url("./resource/me.jpg")'
+      e.target.style.content = 'url("./resource/me.png")'
     }
     for(let i = 0; i< 4; i++){
       if(count >= i+1) box[i].style.display = 'block'
     }
     count++
+  }
+  imgOver(e){
+    e.currentTarget.style.boxShadow = '0px 0px 10px 10px gray'
+  }
+  imgOut(e){
+    e.currentTarget.style.boxShadow = '0px 0px 0px 0px gray'
   }
   render(){
     if(this.state.jump){
@@ -54,12 +61,14 @@ export default class Introduction extends Component{
           <img style={style.silhouette}/>
         </header>
         <section style={style.section}>
-          <img style={style.centerImg} src="./resource/introduction_img.png" 
-            onClick={e => this.imgClick(e)}/>
-          <DragableBox/>
-          <DragableBox/>
-          <DragableBox/>
-          <DragableBox/>
+          <img style={style.centerImg} src="./resource/user.png" 
+            onClick={e => this.imgClick(e)}
+            onMouseOver={e => this.imgOver(e)}
+            onMouseOut={e => this.imgOut(e)}/>
+          <DragableBox compNum='0'/>
+          <DragableBox compNum='1'/>
+          <DragableBox compNum='2'/>
+          <DragableBox compNum='3'/>
         </section>
         <hr />
         <Footer jump={this.jumpCallback}/>

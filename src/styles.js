@@ -88,7 +88,7 @@ const styles = {
       fontSize: '2vw',
       cursor: 'pointer',
       fontWeight: 'bold',
-      textTransform: 'uppercase',
+      textTransform: 'uppercase'
     },
   },
   sideArrow: {
@@ -224,11 +224,16 @@ const styles = {
     frame: {
       position: 'absolute',
       display: 'none',
-      width: '100px',
-      height: '100px',
+      width: '16vw',
+      height: '16vw',
+      lineHeight: '16vw',
+      textAlign: 'center',
+      fontSize: '4vw',
+      fontWeight: 'bold',
       backgroundColor: 'black',
       color: 'white',
-      borderRadius: '50px'
+      borderRadius: '8vw',
+      cursor: 'pointer'
     }
   },
   introduction:{
@@ -271,12 +276,15 @@ const styles = {
       position: 'absolute',
       top: '50%',
       left: '50%',
-      width: '200px',
-      height: '250px',
+      width: '14vw',
+      height: '14vw',
+      padding: '1vw',
       transform: 'translate(-50%, -50%)',
-      borderRadius: '100px',
-      border: '1px solid black',
-      cursor: 'pointer'
+      borderRadius: '8vw',
+      border: '1px solid gray',
+      cursor: 'pointer',
+      boxShodow: '0px 0px 0px 0px gray',
+      transitionDuration: '1s'
     },
   },
   history:{
