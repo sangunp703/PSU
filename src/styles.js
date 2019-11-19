@@ -74,8 +74,8 @@ const styles = {
   mainHeader: {
     nav: {
       width: '100vw',
-      height: '10vh',
-      lineHeight: '10vh',
+      height: '8vmin',
+      lineHeight: '8vmin',
       position: 'fixed',
       display: 'grid',
       gridTemplateColumns: 'repeat(4, 1fr)',
@@ -167,7 +167,7 @@ const styles = {
   audioBox:{
     container: {
       position: 'fixed',
-      bottom: '0',
+      bottom: '10%',
       left: '0',
       width: '15%',
       height: '20%',
@@ -448,7 +448,7 @@ const styles = {
       position: 'relative',
       width: '60vw',
       height: '29vw',
-      margin: '0 auto',
+      margin: '50px auto',
       textAlign: 'center'
     },
     image: {
@@ -486,11 +486,11 @@ const styles = {
     layout:{
       width: '100%',
       height: '100%',
-      backgroundColor: 'rgba(0,0,0,0.5)',
+      backgroundColor: 'rgba(0,0,0,0.75)',
     },
     screenshot:{
       position: 'absolute',
-      height: '60vh',
+      height: '75vh',
       width: 'auto',
       top: '50%',
       left: '50%',

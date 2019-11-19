@@ -3,7 +3,7 @@ import styles from '../styles'
 import request from 'superagent'
 
 const style = styles.workBox
-const titleList = ['PSU', 'PPE', 'MITALENT']
+const titleList = ['MITALENT', 'PSU', 'PPE']
 
 export default class WorkBox extends Component {
   constructor(props){
@@ -37,11 +37,11 @@ export default class WorkBox extends Component {
     explain.style.display = 'none'
   }
   mouseClick(e){
-    const view = document.querySelector('.view')
+    const view = e.currentTarget.parentNode.querySelector('.view')
     view.style.display = "block"
   }
   closeClick(e){
-    const view = document.querySelector('.view')
+    const view = e.currentTarget.parentNode
     view.style.display = "none"
   }
   render(){
