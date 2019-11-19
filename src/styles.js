@@ -369,10 +369,6 @@ const styles = {
       fontSize: '3vw',
       textTransform: 'uppercase',
       fontWeight: 'bold'
-    },
-    workTitle: {
-      fontSize: '2vw',
-      margin: '1vw 0'
     }
   },
   contact:{
@@ -443,7 +439,8 @@ const styles = {
     info:{
       fontSize: '2vw',
       color: 'white',
-      textDecoration: 'none'
+      textDecoration: 'none',
+      userSelect: 'text'
     }
   },
   workBox:{
@@ -472,6 +469,43 @@ const styles = {
       backgroundColor: 'rgba(0,0,0,0.7)',
       color: 'white',
       cursor: 'pointer'
+    },
+    workTitle: {
+      fontSize: '2vw',
+      margin: '1vw 0'
+    },
+    view:{
+      position: 'fixed',
+      display: 'none',
+      width: '100%',
+      height: '100%',
+      top: '0',
+      left: '0',
+      zIndex: '10'
+    },
+    layout:{
+      width: '100%',
+      height: '100%',
+      backgroundColor: 'rgba(0,0,0,0.5)',
+    },
+    screenshot:{
+      position: 'absolute',
+      height: '60vh',
+      width: 'auto',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      boxShadow: '0px 0px 10px 10px white'
+    },
+    closeBtn:{
+      position: 'absolute',
+      top: '10%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      backgroundColor: 'white',
+      width: '50px',
+      height: '50px',
+      borderRadius: '25px'
     }
   },
   historyBox:{
@@ -522,7 +556,10 @@ const styles = {
       height: '100px',
       backgroundColor: 'white',
       cursor: 'pointer',
-      zIndex: '1'
+      zIndex: '1',
+      borderRadius: '10px',
+      boxShodow: '0px 0px 0px 0px gray',
+      transitionDuration: '1s'
     },
     startIcon:{
       width: '100%',

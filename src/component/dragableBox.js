@@ -27,7 +27,7 @@ export default class DragableBox extends Component {
   }
   componentDidMount(){
     const box = document.querySelectorAll('.dragableFrame')
-    for(let i = 0; i< 4; i++){
+    for(let i = 0; i< box.length; i++){
       this.initComp(box[i], i)
     }
   }

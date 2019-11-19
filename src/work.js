@@ -46,21 +46,12 @@ export default class Work extends Component{
           <article style = {style.article}>
             <h1 style={style.articleTitle}>Publishing</h1>
             <hr />
-            <h2 style={style.workTitle}>title</h2>
             <WorkBox />
-            <h2 style={style.workTitle}>title</h2>
-            <WorkBox />
-            <h2 style={style.workTitle}>title</h2>
             <WorkBox />
           </article>
           <article style = {style.article}>
             <h1 style={style.articleTitle}>JS</h1>
             <hr />
-            <h2 style={style.workTitle}>title</h2>
-            <WorkBox />
-            <h2 style={style.workTitle}>title</h2>
-            <WorkBox />
-            <h2 style={style.workTitle}>title</h2>
             <WorkBox />
           </article>
         </section>

@@ -22,11 +22,20 @@ export default class HistoryTree extends Component {
       this.setState({toggle: true})
     }
   }
+  imgOver(e){
+    e.currentTarget.style.boxShadow = '0px 0px 10px 10px gray'
+  }
+  imgOut(e){
+    e.currentTarget.style.boxShadow = '0px 0px 0px 0px gray'
+  }
   render(){
     return (
       <div>
         <div style={style.imageFrame}
-            onClick={e => this.treeDraw(e)}><img src="/resource/sprout.png" style={style.startIcon} />
+            onClick={e => this.treeDraw(e)}
+            onMouseOver={e => this.imgOver(e)}
+            onMouseOut={e => this.imgOut(e)}>
+          <img src="/resource/sprout.png" style={style.startIcon} />
         </div>
         <div class="tree" style={{display:'none'}}>
           <div style={style.verticalLine}></div>
