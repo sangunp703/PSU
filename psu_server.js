@@ -19,6 +19,14 @@ app.get('/api/screenshot', (req, res) => {
     })
   })
 })
+app.get('/api/history', (req, res) => {
+  const history = JSON.parse(fs.readFileSync('./src/content/history.json')).item[req.query.index]
+  res.json({historyBox: history})
+})
+app.get('/api/work', (req, res) => {
+  const work = JSON.parse(fs.readFileSync('./src/content/work.json')).item[req.query.index]
+  res.json({workBox: work})
+})
 
 app.use('/', express.static('./public'))
 app.use('/opening', express.static('./public'))

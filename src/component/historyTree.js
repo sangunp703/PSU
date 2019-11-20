@@ -40,13 +40,13 @@ export default class HistoryTree extends Component {
         <div class="tree" style={{display:'none'}}>
           <div style={style.verticalLine}></div>
           <div style={style.grid}>
-            <div style={style.gridx}><HistoryBox LR="L"/></div>
-            <div style={style.gridItem}><HistoryBox LR="R"/></div>
-            <div style={style.gridx}><HistoryBox LR="L"/></div>
-            <div style={style.gridx}><HistoryBox LR="R"/></div>
-            <div style={style.gridx}><HistoryBox LR="L"/></div>
-            <div style={style.gridx}><HistoryBox LR="R"/></div>
-            <div style={style.gridx}><HistoryBox LR="L"/></div>
+            <div style={style.gridx}><HistoryBox boxNum={0} LR="L"/></div>
+            <div style={style.gridItem}><HistoryBox boxNum={1} LR="R"/></div>
+            <div style={style.gridx}><HistoryBox boxNum={2} LR="L"/></div>
+            <div style={style.gridx}><HistoryBox boxNum={3} LR="R"/></div>
+            <div style={style.gridx}><HistoryBox boxNum={4} LR="L"/></div>
+            <div style={style.gridx}><HistoryBox boxNum={5} LR="R"/></div>
+            <div style={style.gridx}><HistoryBox boxNum={6} LR="L"/></div>
           </div>
           <div><img style={style.tree} src="/resource/tree.png" /></div>
         </div>

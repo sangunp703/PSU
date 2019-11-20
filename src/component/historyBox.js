@@ -1,6 +1,7 @@
 // 아래로 스크롤 화살표
 import React, {Component} from 'react'
 import styles from '../styles'
+import request from 'superagent'
 
 const style = styles.historyBox
 
@@ -8,8 +9,19 @@ export default class HistoryBox extends Component {
   constructor(props){
     super(props)
     this.state = {
-      toggle: false
+      toggle: false, historyBox: {}
     }
+  }
+  componentWillMount(){
+    request
+      .get('/api/history')
+      .query({
+        index: this.props.boxNum
+      })
+      .end((err, res) => {
+        if(err) return 
+        this.setState({historyBox: res.body.historyBox})
+      })
   }
   boxClick(e){
     const story = e.currentTarget.parentNode.querySelector('.story')
@@ -33,7 +45,7 @@ export default class HistoryBox extends Component {
         onLoad={e => this.loadImg(e)}>
         <div class="historyImgFrame" style={style.imageFrame}
           onClick={e => this.boxClick(e)}><img class="img" src="../resource/back.png" style={style.icon}/></div>
-        <div class="story" style={style.story}>hello</div>
+        <div class="story" style={style.story}>{this.state.historyBox.content}</div>
       </div>
     )
   }

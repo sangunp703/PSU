@@ -9,8 +9,19 @@ export default class WorkBox extends Component {
   constructor(props){
     super(props)
     this.state = {
-      imgNum: 1, list: []
+      imgNum: 1, list: [], workBox: {}
     }
+  }
+  componentWillMount(){
+    request
+      .get('/api/work')
+      .query({
+        index: this.props.title
+      })
+      .end((err, res) => {
+        if(err) return 
+        this.setState({workBox: res.body.workBox})
+      })
   }
   componentDidMount(){
     const box = document.querySelectorAll('.workBoxImage')
@@ -71,8 +82,8 @@ export default class WorkBox extends Component {
           onClick={e => this.mouseClick(e)}>
           <img class="workBoxImage" style={style.image} />
           <div class="explain" style={style.explain}>
-            <p>PSU</p>
-            <p>hello this is my first app</p>
+            <p>{this.state.workBox.title}</p>
+            <p>{this.state.workBox.content}</p>
           </div> 
         </div>
         <div class="view" style={style.view}>
