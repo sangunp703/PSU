@@ -19,7 +19,7 @@ export default class HistoryBox extends Component {
         index: this.props.boxNum
       })
       .end((err, res) => {
-        if(err) return 
+        if(err) return
         this.setState({historyBox: res.body.historyBox})
       })
   }
@@ -29,7 +29,7 @@ export default class HistoryBox extends Component {
       story.style.display = "none"
       this.setState({toggle: false})
     } else{
-      story.style.display = "block"
+      story.style.display = "flex"
       this.setState({toggle: true})
     }
   }
@@ -45,7 +45,10 @@ export default class HistoryBox extends Component {
         onLoad={e => this.loadImg(e)}>
         <div class="historyImgFrame" style={style.imageFrame}
           onClick={e => this.boxClick(e)}><img class="img" src="../resource/back.png" style={style.icon}/></div>
-        <div class="story" style={style.story}>{this.state.historyBox.content}</div>
+        <div class="story" style={style.story}>
+          <p style={style.title}>{this.state.historyBox.title}</p>
+          <pre style={style.content}>{this.state.historyBox.content}</pre>
+        </div>
       </div>
     )
   }

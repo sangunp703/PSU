@@ -560,7 +560,18 @@ const styles = {
       width: '100%',
       height: '100%',
       display: 'none',
-      border: '1px solid black'
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'column '
+    },
+    title:{
+      fontSize: '1.2vw',
+      margin: '1vw'
+    },
+    content: {
+      fontSize: '0.7vw',
+      margin: '1vw',
+      whiteSpace: 'pre-line'
     }
   },
   historyTree:{
