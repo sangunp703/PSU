@@ -506,6 +506,30 @@ const styles = {
       width: '50px',
       height: '50px',
       borderRadius: '25px'
+    },
+    back:{
+      position: 'absolute',
+      left: '5%',
+      top: '50%',
+      width: '50px',
+      height: 'auto',
+      transform: 'translate(-50%, -50%)',
+      backgroundColor: 'white',
+      borderRadius: '25px',
+      boxShadow: '0px 0px 5px 5px white',
+      cursor: 'pointer'
+    },
+    next:{
+      position: 'absolute',
+      right: '5%',
+      top: '50%',
+      width: '50px',
+      height: 'auto',
+      transform: 'translate(50%, -50%)',
+      backgroundColor: 'white',
+      borderRadius: '25px',
+      boxShadow: '0px 0px 5px 5px white',
+      cursor: 'pointer'
     }
   },
   historyBox:{
