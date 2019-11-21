@@ -459,16 +459,19 @@ const styles = {
     },
     explain: {
       position: 'absolute',
-      width: '100%',
-      display: 'none',
-      height: '100%',
       left: '50%',
       top: '50%',
       transform: 'translate(-50%, -50%)',
       transitionDuration: '1s',
       backgroundColor: 'rgba(0,0,0,0.7)',
       color: 'white',
-      cursor: 'pointer'
+      cursor: 'pointer',
+      width: '100%',
+      height: '100%',
+      display: 'none',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'column '
     },
     workTitle: {
       fontSize: '2vw',
@@ -530,6 +533,15 @@ const styles = {
       borderRadius: '25px',
       boxShadow: '0px 0px 5px 5px white',
       cursor: 'pointer'
+    },
+    title:{
+      fontSize: '1.5vw',
+      margin: '1vw'
+    },
+    content: {
+      fontSize: '1vw',
+      margin: '1vw',
+      whiteSpace: 'pre-line'
     }
   },
   historyBox:{

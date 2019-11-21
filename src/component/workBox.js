@@ -41,7 +41,7 @@ export default class WorkBox extends Component {
   }
   mouseOver(e){
     const explain = e.currentTarget.querySelector('.explain')
-    explain.style.display = 'block'
+    explain.style.display = 'flex'
   }
   mouseOut(e){
     const explain = e.currentTarget.querySelector('.explain')
@@ -82,8 +82,8 @@ export default class WorkBox extends Component {
           onClick={e => this.mouseClick(e)}>
           <img class="workBoxImage" style={style.image} />
           <div class="explain" style={style.explain}>
-            <p>{this.state.workBox.title}</p>
-            <p>{this.state.workBox.content}</p>
+            <p style={style.title}>{this.state.workBox.title}</p>
+            <pre style={style.content}>{this.state.workBox.content}</pre>
           </div> 
         </div>
         <div class="view" style={style.view}>

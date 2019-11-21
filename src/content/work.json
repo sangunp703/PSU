@@ -2,15 +2,15 @@
   "item": [
     {
       "title": "MITALENT",
-      "content": "psd 파일로 퍼블리싱"
+      "content": "디자이너가 작업한 PSD 파일을 보고 똑같이 퍼블리싱\n\n\n#HTML / #CSS"
     },
     {
       "title": "PSU",
-      "content": "완성한 웹"
+      "content": "처음으로 완성한 웹사이트\n\n나 자신을 소개하는 포트폴리오 사이트\n\n프론트는 react, 백엔드는 Node.js의 express를 이용하여 구성\n\n\n#React / #ReactRouter / #Superagent / #Node.js / #Express"
     },
     {
       "title": "PPE",
-      "content": "첫 게시판"
+      "content": "첫 게시판 웹사이트\n\n사진을 좋아하는 사람이나 평가받고자 하는 사람들을 위한 커뮤니티 사이트\n\nnode.js 라이브러리중 하나인 NeDB를 이용해 만든 CRUD게시판\n\n\n#React / #ReactRouter / #Superagent / #Node.js / #Express / #NeDB"
     }
   ]
 }
