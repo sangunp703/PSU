@@ -6,7 +6,7 @@ const fs = require('fs');
 app.listen(port, () => {
   console.log('server is running => ' + `http://localhost:${port}`)
 })
-
+// work페이지 뷰 스크린샷 리스트 제공 API
 app.get('/api/screenshot', (req, res) => {
   const title = req.query.title
   const imgList = []
@@ -19,10 +19,12 @@ app.get('/api/screenshot', (req, res) => {
     })
   })
 })
+// history페이지 내용 제공 API
 app.get('/api/history', (req, res) => {
   const history = JSON.parse(fs.readFileSync('./src/content/history.json')).item[req.query.index]
   res.json({historyBox: history})
 })
+//work페이지 내용 제공 API
 app.get('/api/work', (req, res) => {
   const work = JSON.parse(fs.readFileSync('./src/content/work.json')).item[req.query.index]
   res.json({workBox: work})

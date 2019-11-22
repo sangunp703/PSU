@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import styles from '../styles'
 
 const style = styles.audioBox
-const audio = require('../function/audioControl')
+const audio = require('../function/audioControl') // 미리 정의해놓은 컨트롤러 함수
 
 export default class AudioBox extends Component {
   constructor(props){
@@ -15,6 +15,7 @@ export default class AudioBox extends Component {
     document.querySelector('.control').style.backgroundColor = this.props.color
     document.querySelector('.box').style.borderColor = this.props.color
   }
+  // 마우스로 아이콘 클릭시 컨트롤러 토글
   musicToggle(){
     const box = document.querySelector('.box')
     if(this.state.toggle){

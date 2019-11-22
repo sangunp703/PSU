@@ -23,6 +23,7 @@ export default class MainHeader extends Component {
       e.target.style.color="black"
     }
   }
+  // nav요소 클릭시 부모로 부터 받은 props에 점프값 전달
   render(){
     return (
       <nav>

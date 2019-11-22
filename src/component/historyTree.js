@@ -12,6 +12,7 @@ export default class HistoryTree extends Component {
       toggle: false
     }
   }
+  // 아이콘 클릭시 트리 요소 토글
   treeDraw(e){
     const tree = document.querySelector('.tree')
     if(this.state.toggle){

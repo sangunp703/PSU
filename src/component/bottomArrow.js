@@ -8,6 +8,7 @@ export default class BottomArrow extends Component {
   constructor(props){
     super(props)
   }
+  // 마우스 호버시 화살표가 아래로 내려갔다 올라오도록 표현
   arrowOver(e){
     const arrow = document.querySelectorAll('.arrow')
     for(let i = 0; i<3; i++){

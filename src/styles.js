@@ -356,6 +356,98 @@ const styles = {
       padding: '100px 0'
     }
   },
+  historyBox:{
+    frame:{
+      position: 'absolute',
+      left: '50%',
+      transform: 'translateX(-50%)',
+      width: '25vw',
+      height: '300px'
+    },
+    imageFrame:{
+      position : 'absolute',
+      left: '100%',
+      top: '50%',
+      transform: 'translate(-50%, -50%)',
+      width: '30px',
+      height: '30px',
+      border: '1px solid black',
+      borderRadius: '20px',
+      backgroundColor: 'white',
+      cursor: 'pointer',
+      padding: '5px'
+    },
+    icon:{
+      width: '100%',
+      height: '100%'
+    },
+    story:{
+      width: '100%',
+      height: '100%',
+      display: 'none',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'column '
+    },
+    title:{
+      fontSize: '1.2vw',
+      margin: '1vw'
+    },
+    content: {
+      fontSize: '0.7vw',
+      margin: '1vw',
+      whiteSpace: 'pre-line'
+    }
+  },
+  historyTree:{
+    verticalLine: {
+      width: '1px',
+      height: '90%',
+      position: 'absolute',
+      left: '50%',
+      transform: 'translateX(-50%)',
+      backgroundColor: 'black'
+    },
+    imageFrame:{
+      position : 'absolute',
+      left: '50%',
+      transform: 'translateX(-50%)',
+      width: '100px',
+      height: '100px',
+      backgroundColor: 'white',
+      cursor: 'pointer',
+      zIndex: '1',
+      borderRadius: '10px',
+      boxShodow: '0px 0px 0px 0px gray',
+      transitionDuration: '1s'
+    },
+    startIcon:{
+      width: '100%',
+      height: '100%'
+    },
+    grid: {
+      paddingTop: '100px',
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr',
+      gridTemplateRows: 'repeat(8, 120px)',
+      gridGap: '60px',
+      width: '70%',
+      margin: '0 auto'
+    },
+    gridItem:{
+      position: 'relative',
+      gridColumn: '2/3',
+      gridRow: '2/4'
+    },
+    gridx:{
+      position: 'relative',
+      gridRow: 'span 2'
+    },
+    tree: {
+      width: '40vw',
+      height: '40vw'
+    }
+  },
   work:{
     header: {
       position: 'relative',
@@ -400,78 +492,6 @@ const styles = {
       fontSize: '3vw',
       textTransform: 'uppercase',
       fontWeight: 'bold'
-    }
-  },
-  contact:{
-    header: {
-      position: 'relative',
-      height: '100vh',
-      width: '100vw',
-      backgroundColor: '#685357'
-    },
-    silhouette:{
-      position: 'absolute',
-      top: '50%',
-      right: '15%',
-      transform: 'translateY(-50%)',
-      content: 'url("./resource/contact_img.png")',
-      width: '40vw',
-      height: '25vw'
-    },
-    title: {
-      position: 'absolute',
-      top: '50%',
-      left: '15%',
-      transform: 'translateY(-50%)',
-      fontSize: '10vw',
-      fontWeight: 'bold',
-      textTransform: 'uppercase',
-      textAlign: 'center'
-    },
-    text:{
-      fontSize: '1.5vw',
-      marginTop: '1vw'
-    },
-    section: {
-      height: '100vh',
-      width: '100vw',
-      backgroundColor: 'white',
-      position: 'relative'
-    },
-    outCircle: {
-      position: 'absolute',
-      top: '60%',
-      left: '50%',
-      transform: 'translate(-50%, -60%)',
-      width: '37vw',
-      height: '37vw',
-      borderRadius: '19vw',
-      border: '10px solid #685357'
-    },
-    inCircle: {
-      position: 'absolute',
-      display: 'grid',
-      gridTemplateRows: 'repeat(3, 2fr 3fr)',
-      justifyItems: 'center',
-      alignItems: 'center',
-      top: '50%',
-      left: '50%',
-      transform: 'translate(-50%, -50%)',
-      width: '35vw',
-      height: '35vw',
-      borderRadius: '18vw',
-      backgroundColor: '#685357',
-      textAlign: 'center'
-    },
-    icon: {
-      width: '2vw',
-      height: '2vw'
-    },
-    info:{
-      fontSize: '2vw',
-      color: 'white',
-      textDecoration: 'none',
-      userSelect: 'text'
     }
   },
   workBox:{
@@ -575,95 +595,76 @@ const styles = {
       whiteSpace: 'pre-line'
     }
   },
-  historyBox:{
-    frame:{
-      position: 'absolute',
-      left: '50%',
-      transform: 'translateX(-50%)',
-      width: '25vw',
-      height: '300px'
+  contact:{
+    header: {
+      position: 'relative',
+      height: '100vh',
+      width: '100vw',
+      backgroundColor: '#685357'
     },
-    imageFrame:{
-      position : 'absolute',
-      left: '100%',
+    silhouette:{
+      position: 'absolute',
       top: '50%',
-      transform: 'translate(-50%, -50%)',
-      width: '40px',
-      height: '40px',
-      border: '1px solid black',
-      borderRadius: '20px',
-      backgroundColor: 'white',
-      cursor: 'pointer'
-    },
-    icon:{
-      width: '100%',
-      height: '100%'
-    },
-    story:{
-      width: '100%',
-      height: '100%',
-      display: 'none',
-      alignItems: 'center',
-      justifyContent: 'center',
-      flexDirection: 'column '
-    },
-    title:{
-      fontSize: '1.2vw',
-      margin: '1vw'
-    },
-    content: {
-      fontSize: '0.7vw',
-      margin: '1vw',
-      whiteSpace: 'pre-line'
-    }
-  },
-  historyTree:{
-    verticalLine: {
-      width: '1px',
-      height: '90%',
-      position: 'absolute',
-      left: '50%',
-      transform: 'translateX(-50%)',
-      backgroundColor: 'black'
-    },
-    imageFrame:{
-      position : 'absolute',
-      left: '50%',
-      transform: 'translateX(-50%)',
-      width: '100px',
-      height: '100px',
-      backgroundColor: 'white',
-      cursor: 'pointer',
-      zIndex: '1',
-      borderRadius: '10px',
-      boxShodow: '0px 0px 0px 0px gray',
-      transitionDuration: '1s'
-    },
-    startIcon:{
-      width: '100%',
-      height: '100%'
-    },
-    grid: {
-      paddingTop: '100px',
-      display: 'grid',
-      gridTemplateColumns: '1fr 1fr',
-      gridTemplateRows: 'repeat(8, 120px)',
-      gridGap: '60px',
-      width: '70%',
-      margin: '0 auto'
-    },
-    gridItem:{
-      position: 'relative',
-      gridColumn: '2/3',
-      gridRow: '2/4'
-    },
-    gridx:{
-      position: 'relative',
-      gridRow: 'span 2'
-    },
-    tree: {
+      right: '15%',
+      transform: 'translateY(-50%)',
+      content: 'url("./resource/contact_img.png")',
       width: '40vw',
-      height: '40vw'
+      height: '25vw'
+    },
+    title: {
+      position: 'absolute',
+      top: '50%',
+      left: '15%',
+      transform: 'translateY(-50%)',
+      fontSize: '10vw',
+      fontWeight: 'bold',
+      textTransform: 'uppercase',
+      textAlign: 'center'
+    },
+    text:{
+      fontSize: '1.5vw',
+      marginTop: '1vw'
+    },
+    section: {
+      height: '100vh',
+      width: '100vw',
+      backgroundColor: 'white',
+      position: 'relative'
+    },
+    outCircle: {
+      position: 'absolute',
+      top: '60%',
+      left: '50%',
+      transform: 'translate(-50%, -60%)',
+      width: '37vw',
+      height: '37vw',
+      borderRadius: '19vw',
+      border: '10px solid #685357'
+    },
+    inCircle: {
+      position: 'absolute',
+      display: 'grid',
+      gridTemplateRows: 'repeat(3, 2fr 3fr)',
+      justifyItems: 'center',
+      alignItems: 'center',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      width: '35vw',
+      height: '35vw',
+      borderRadius: '18vw',
+      backgroundColor: '#685357',
+      textAlign: 'center'
+    },
+    icon: {
+      width: '2vw',
+      height: '2vw'
+    },
+    info:{
+      fontSize: '2vw',
+      color: 'white',
+      textDecoration: 'none',
+      userSelect: 'text'
     }
   },
   footer:{
