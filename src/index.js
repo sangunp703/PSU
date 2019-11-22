@@ -6,6 +6,8 @@ import Introduction from './introduction'
 import History from './history'
 import Work from './work'
 import Contact from './contact'
+import Test from './test'
+import Test2 from './test2'
 
 const PSUApp = () => (
   <Router>
@@ -17,6 +19,8 @@ const PSUApp = () => (
         <Route path='/history' component={History} />
         <Route path='/work' component={Work} />
         <Route path='/contact' component={Contact} />
+        <Route path='/test' component={Test} />
+        <Route path='/test2' component={Test2} />
         <Route component={Opening} />
       </Switch>
     </div>

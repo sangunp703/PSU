@@ -1,4 +1,36 @@
 const styles = {
+  test:{
+    screen: {
+      width: '100vw',
+      height: '100vh',
+      backgroundColor: 'black'
+    },
+    video: {
+      width: '75vw',
+      height: 'auto',
+      position: 'absolute',
+      left: '50%',
+      top: '50%',
+      transform: 'translate(-50%, -50%)',
+      opacity: '1',
+      transitionProperty: 'opacity',
+      transitionTimingFunction: 'cubic-bezier(1,0,0.5,1)',
+      transitionDuration: '7s'
+    },
+    name:{
+      position: 'absolute',
+      left: '50%',
+      top: '50%',
+      transform: 'translate(-50%, -50%)',
+      fontSize: '8vw',
+      opacity: '0',
+      transitionProperty: 'opacity',
+      transitionTimingFunction: 'cubic-bezier(0.75,0,0.25,0)',
+      transitionDuration: '7s',
+      color: 'white',
+      whiteSpace: 'nowrap'
+    }
+  },
   opening: {
     screen:{
       position: 'fixed',
@@ -269,8 +301,7 @@ const styles = {
     section: {
       position: 'relative',
       height: '100vh',
-      width: '100vw',
-      backgroundColor: 'white'
+      width: '100vw'
     },
     centerImg: {
       position: 'absolute',

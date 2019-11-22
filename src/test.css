@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Bad+Script");
+
+.openingScreen{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+  font-family: 'Bad Script', cursive;
+}
+.openingScreen__neon{
+  margin: 0;
+  padding: 0;
+  color: #111;
+  font-size: 12em;
+  font-weight: bold;
+}
+.openingScreen__item{
+  margin: 0;
+  padding: 0;
+  display: table-cell;
+  animation: animate 5s linear 1;
+}
+.openingScreen__item--end{
+  color: #eee;
+    filter: blur(0px);
+    text-shadow: 0 0 10px #7f55ff,
+                0 0 20px #7f55ff,
+                0 0 40px #7f55ff,
+                0 0 80px #7f55ff,
+                0 0 120px #7f55ff,
+                0 0 200px #7f55ff,
+                0 0 300px #7f55ff,
+                0 0 400px #7f55ff;
+}
+@keyframes animate{
+  0%,2%{
+    color: #eee;
+    filter: blur(0px);
+    text-shadow: 0 0 10px #7f55ff,
+                0 0 20px #7f55ff,
+                0 0 40px #7f55ff,
+                0 0 80px #7f55ff,
+                0 0 120px #7f55ff,
+                0 0 200px #7f55ff,
+                0 0 300px #7f55ff,
+                0 0 400px #7f55ff;
+  }
+  2%,31%{
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+  32%{
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+  32%,34%{
+    color: #eee;
+    filter: blur(0px);
+    text-shadow: 0 0 10px #7f55ff,
+                0 0 20px #7f55ff,
+                0 0 40px #7f55ff,
+                0 0 80px #7f55ff,
+                0 0 120px #7f55ff,
+                0 0 200px #7f55ff,
+                0 0 300px #7f55ff,
+                0 0 400px #7f55ff;
+  }
+  34%,53%{
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+  54%{
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+  54%,56%{
+    color: #eee;
+    filter: blur(0px);
+    text-shadow: 0 0 10px #7f55ff,
+                0 0 20px #7f55ff,
+                0 0 40px #7f55ff,
+                0 0 80px #7f55ff,
+                0 0 120px #7f55ff,
+                0 0 200px #7f55ff,
+                0 0 300px #7f55ff,
+                0 0 400px #7f55ff;
+  }
+  56%,65%{
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+  66%{
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+  66%,68%{
+    color: #eee;
+    filter: blur(0px);
+    text-shadow: 0 0 10px #7f55ff,
+                0 0 20px #7f55ff,
+                0 0 40px #7f55ff,
+                0 0 80px #7f55ff,
+                0 0 120px #7f55ff,
+                0 0 200px #7f55ff,
+                0 0 300px #7f55ff,
+                0 0 400px #7f55ff;
+  }
+  68%,72%{
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+  73%{
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+  73%,75%{
+    color: #eee;
+    filter: blur(0px);
+    text-shadow: 0 0 10px #7f55ff,
+                0 0 20px #7f55ff,
+                0 0 40px #7f55ff,
+                0 0 80px #7f55ff,
+                0 0 120px #7f55ff,
+                0 0 200px #7f55ff,
+                0 0 300px #7f55ff,
+                0 0 400px #7f55ff;
+  }
+  75%,79%{
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+  80%{
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+  80%,100%{
+    color: #eee;
+    filter: blur(0px);
+    text-shadow: 0 0 10px #7f55ff,
+                0 0 20px #7f55ff,
+                0 0 40px #7f55ff,
+                0 0 80px #7f55ff,
+                0 0 120px #7f55ff,
+                0 0 200px #7f55ff,
+                0 0 300px #7f55ff,
+                0 0 400px #7f55ff;
+  }
+}

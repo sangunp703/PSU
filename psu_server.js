@@ -29,6 +29,8 @@ app.get('/api/work', (req, res) => {
 })
 
 app.use('/', express.static('./public'))
+app.use('/test', express.static('./public'))
+app.use('/test2', express.static('./public'))
 app.use('/opening', express.static('./public'))
 app.use('/introduction', express.static('./public'))
 app.use('/history', express.static('./public'))
