@@ -53,6 +53,7 @@ export default class Work extends Component{
             <hr />
             <WorkBox title={1}/>
             <WorkBox title={2}/>
+            <WorkBox title={3}/>
           </article>
         </section>
         <hr />

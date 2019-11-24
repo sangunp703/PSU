@@ -2,7 +2,7 @@
   "item": [
     {
       "title": "MITALENT",
-      "content": "디자이너가 작업한 PSD 파일을 보고 똑같이 퍼블리싱\n\n\n#HTML / #CSS"
+      "content": "퍼블리싱 작업\n\n디자이너가 작업한 PSD 파일을 보고 똑같이 퍼블리싱\n\n\n#HTML / #CSS"
     },
     {
       "title": "PSU",
@@ -11,6 +11,10 @@
     {
       "title": "PPE",
       "content": "첫 게시판 웹사이트\n\n사진을 좋아하는 사람이나 평가받고자 하는 사람들을 위한 커뮤니티 사이트\n\nnode.js 라이브러리중 하나인 NeDB를 이용해 만든 CRUD게시판\n\n\n#React / #ReactRouter / #Superagent / #Node.js / #Express / #NeDB"
+    },
+    {
+      "title": "KoreanWatch",
+      "content": "리액트 컴포넌트\n\n시간을 한글로 나타낸 컴포넌트\n\n시간과 분을 나타내고 초는 외곽의 테두리로 나타냈다.\n\n\n#React / #Create-react-app"
     }
   ]
 }

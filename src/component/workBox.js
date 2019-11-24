@@ -3,13 +3,13 @@ import styles from '../styles'
 import request from 'superagent'
 
 const style = styles.workBox
-const titleList = ['MITALENT', 'PSU', 'PPE']
+const titleList = ['MITALENT', 'PSU', 'PPE', 'KoreanWatch']
 
 export default class WorkBox extends Component {
   constructor(props){
     super(props)
     this.state = {
-      imgNum: 1, list: [], workBox: {}
+      imgNum: 1, list: [], workBox: {title: '', content: ''}
     }
   }
   // 서버에 json파일 요청 후 결과 값을 기록
@@ -20,8 +20,10 @@ export default class WorkBox extends Component {
         index: this.props.title
       })
       .end((err, res) => {
-        if(err) return 
-        this.setState({workBox: res.body.workBox})
+        if(err) return
+        if(res.body.workBox !== undefined){
+          this.setState({workBox: res.body.workBox})
+        }
       })
   }
   // 서버에 스크린샷 리스트 요청 후 결과 값을 기록
