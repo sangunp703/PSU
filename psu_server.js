@@ -3,7 +3,7 @@ const app = express()
 const PORT = process.env.PORT
 const fs = require('fs');
  
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log('server is running => ' + `http://localhost:${PORT}`)
 })
 // work페이지 뷰 스크린샷 리스트 제공 API
