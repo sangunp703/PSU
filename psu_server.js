@@ -1,10 +1,10 @@
 const express = require('express')
 const app = express()
-const port = 3001
+const PORT = process.env.PORT
 const fs = require('fs');
  
 app.listen(port, () => {
-  console.log('server is running => ' + `http://localhost:${port}`)
+  console.log('server is running => ' + `http://localhost:${PORT}`)
 })
 // work페이지 뷰 스크린샷 리스트 제공 API
 app.get('/api/screenshot', (req, res) => {
