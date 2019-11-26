@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon psu_server",
+    "start": "node psu_server",
     "build": "webpack",
-    "watch": "webpack -w",
-    "start:dev": "nodemon --watch src/ psu_server.js"
+    "watch": "webpack -w"
   },
   "repository": {
     "type": "git",
@@ -38,7 +37,6 @@
     "@babel/preset-react": "^7.7.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
-    "nodemon": "^1.19.4",
     "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
