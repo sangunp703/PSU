@@ -40,5 +40,9 @@
     "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
+  },
+  "engines":{
+    "node": "v10.15.3",
+    "npm" : "6.4.1"
   }
 }
