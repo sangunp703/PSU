@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
-const PORT = process.env.PORT
-const fs = require('fs');
- 
+const PORT = 3001
+const fs = require('fs')
+
 app.listen(PORT, () => {
   console.log('server is running => ' + `http://localhost:${PORT}`)
 })
@@ -10,9 +10,9 @@ app.listen(PORT, () => {
 app.get('/api/screenshot', (req, res) => {
   const title = req.query.title
   const imgList = []
-  fs.readdir('./public/resource/screenshot/', function(err, filelist){
-    for(let i = 0; i < filelist.length; i++){
-      if(filelist[i].indexOf(title) != -1)  imgList.push(filelist[i])
+  fs.readdir('./public/resource/screenshot/', function(err, filelist) {
+    for (let i = 0; i < filelist.length; i++) {
+      if (filelist[i].indexOf(title) != -1) imgList.push(filelist[i])
     }
     res.json({
       list: imgList
@@ -22,12 +22,12 @@ app.get('/api/screenshot', (req, res) => {
 // history페이지 내용 제공 API
 app.get('/api/history', (req, res) => {
   const history = JSON.parse(fs.readFileSync('./src/content/history.json')).item[req.query.index]
-  res.json({historyBox: history})
+  res.json({ historyBox: history })
 })
 //work페이지 내용 제공 API
 app.get('/api/work', (req, res) => {
   const work = JSON.parse(fs.readFileSync('./src/content/work.json')).item[req.query.index]
-  res.json({workBox: work})
+  res.json({ workBox: work })
 })
 
 app.use('/', express.static('./public'))

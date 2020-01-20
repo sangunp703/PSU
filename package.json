@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node psu_server",
+    "start": "nodemon psu_server",
     "build": "webpack",
     "watch": "webpack -w"
   },
@@ -41,8 +41,8 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
-  "engines":{
+  "engines": {
     "node": "v10.15.3",
-    "npm" : "6.4.1"
+    "npm": "6.4.1"
   }
 }
